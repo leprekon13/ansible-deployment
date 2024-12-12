@@ -1,0 +1,5 @@
+# Перезапускаем сервис Apache, если конфигурация была изменена
+- name: Restart Apache
+  service:
+    name: apache2
+    state: restarted

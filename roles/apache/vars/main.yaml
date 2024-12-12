@@ -1,0 +1,5 @@
+# Основные переменные для настройки Apache
+apache_user: www-data
+apache_default_port: 80
+apache_document_root: /var/www/html
+apache_log_dir: /var/log/apache2
