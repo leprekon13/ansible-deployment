@@ -1,0 +1,7 @@
+# Основные переменные для настройки Nginx
+nginx_user: www-data
+nginx_worker_processes: auto
+nginx_worker_connections: 768
+nginx_default_port: 80
+nginx_root: /var/www/html
+nginx_index: [index.html, index.htm]
