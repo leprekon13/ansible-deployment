@@ -1,0 +1,6 @@
+- name: Deploy Nginx and Apache
+  hosts: all                # Указываем, что плейбук работает со всеми серверами
+  become: yes               # Выполняем задачи с повышением привилегий
+  roles:
+    - { role: nginx, when: "'nginx_servers' in group_names" }   # Применяем роль Nginx для соответствующей группы
+    - { role: apache, when: "'apache_servers' in group_names" } # Применяем роль Apache для соответствующей группы
