@@ -2,11 +2,11 @@ all:
   children:
     nginx_servers:
       hosts:
-        192.168.1.100:        # IP-адрес сервера с Nginx
-          ansible_user: diman # Пользователь для подключения по SSH
-          ansible_ssh_private_key_file: ~/.ssh/id_rsa  # Путь к SSH-ключу
+        207.90.238.78:
+          ansible_user: diman
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
     apache_servers:
       hosts:
-        192.168.1.101:        # IP-адрес сервера с Apache
-          ansible_user: diman # Пользователь для подключения по SSH
-          ansible_ssh_private_key_file: ~/.ssh/id_rsa  # Путь к SSH-ключу
+        176.32.38.74:
+          ansible_user: diman
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
